@@ -1,7 +1,7 @@
 # isolate_example
 
-A practical Flutter demo explaining how **Isolates** work under the hood, written from a Software Engineer (SWE) perspective.  
-This documentation helps you understand the full concept — so even if you forget later, re-reading this file will make everything clear again.
+A practical Flutter demo explaining how **Isolates** work in Flutter.
+This documentation explains the full concept clearly — so if you ever forget how it works, reading this file again will help you quickly remember everything.
 
 ---
 
@@ -107,3 +107,4 @@ When you revisit this README, you’ll quickly recall how isolates work — how 
 
 - [Flutter Docs: Isolates](https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html)
 - [Dart Concurrency Model](https://dart.dev/guides/language/concurrency)
+
