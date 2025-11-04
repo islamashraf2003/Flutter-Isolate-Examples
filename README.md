@@ -1,4 +1,4 @@
-# isolate_example
+# 🧩 isolate_example
 
 A practical Flutter demo explaining how **Isolates** work in Flutter.
 This documentation explains the full concept clearly — so if you ever forget how it works, reading this file again will help you quickly remember everything.
@@ -47,6 +47,15 @@ You can think of them as two ends of a pipe:
 Main Isolate                  Spawned Isolate
 -------------                 ----------------
 ReceivePort <———— SendPort ——>  heavyTask()
+```
+```
+ ┌──────────────────────────────┐
+ │          Main Isolate        │
+ │                              │
+ │  ReceivePort <── result ──┐  │
+ │                           │  │
+ │  └─ sendPort ──► Worker ──┘  │
+ └──────────────────────────────┘
 ```
 
 ### Example Flow:
@@ -107,4 +116,5 @@ When you revisit this README, you’ll quickly recall how isolates work — how 
 
 - [Flutter Docs: Isolates](https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html)
 - [Dart Concurrency Model](https://dart.dev/guides/language/concurrency)
+
 
