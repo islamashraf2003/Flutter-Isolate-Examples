@@ -25,7 +25,7 @@ void heavyTask(SendPort sendPort) {
 }
 
 class _IsolateDemoState extends State<IsolateDemo> {
-  String result = 'No result right now';
+  String result = 'No result right now.';
 
   Future<void> runHeavyTaskWithIsolate() async {
     setState(() {
